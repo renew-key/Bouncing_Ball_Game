@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #myCanvas {
+    border: 5px lightgreen solid;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #mySec {
+    margin: 1rem;
+  }
+  #mySec,
+  #mySec2 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  button {
+    border: 1px red solid;
+    background-color: blue;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
